@@ -26,6 +26,11 @@
             <li><a class="header-link" href="">Contacts</a></li>
         </ul>
     </nav>
+    <button class="mobile-burger-btn" type="button">
+        <svg class="mobile-burger-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+        </svg>
+    </button>
     <address class="address-link">
         <ul class="address-menu">
             <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -39,15 +44,15 @@
     <main>
 
         <!-- Головна секція 1 -->
-        <section class="main-title">
+        <!-- <section class="main-title">
         <div class="container main-section">
             <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="main-button" type="button">Order Service</button>
         </div>
-        </section>
+        </section> -->
 
         <!-- Секція досягнень - що вміємо 2 -->
-        <section class="defenders-section">
+        <!-- <section class="defenders-section">
             <div class="container defenders-container">
             <h2 class="visually-hidden">Defenders</h2>
             <ul class="defenders-section-ul">
@@ -90,10 +95,10 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Секція з командою 3 -->
-        <section class="team-section">
+        <!-- <section class="team-section">
             <div class="container team-container">
             <h2 class="section-h-two">Our Team</h2>
             <ul class="team-section-ul">
@@ -247,10 +252,10 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- Зроблені проекти 4 -->
-        <section class="portfolio-section">
+        <!-- <section class="portfolio-section">
             <div class="portfolio-container container">
             <h2 class="section-h-two">Our Portfolio</h2>
             <ul class="portfolio-section-ul">
@@ -333,11 +338,11 @@
                 </li>
             </ul>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- footer собствєнно -->
-    <footer class="footer-block">
+    <!-- <footer class="footer-block">
         <div class="footer-container container">
 
         <div class="footer-column">
@@ -400,25 +405,29 @@
                                 </svg>
                         </button>
                     </form>
-                </div>
+            </div>
         </div>
 
-    </footer>
+    </footer> -->
 
     <!-- Спливаюче вікно -->
-    <div class="backdrop is-open"> <!-- is-open -->
+    <div class="backdrop backdrop-mobile is-open">
+
         <div class="modal-form">
+
+            <!-- хрестик який просить - закрий мене - кнопка-закривашка-->
             <button class="modal-close-x-btn" type="button">
                 <svg class="modal-close-x-svg" width="8" height="8" aria-label="modal close button">
                     <use href="./images/icons.svg#icon-close-x" ></use>
                 </svg>
             </button>
-
+            <!-- заголовок модального вікна -->
             <p class="modal-head-text">Leave your contacts and we will call you back</p>
-            
+            <!-- модальна форма - ім'я, пошта, телефон, коментан -->
             <form class="modal-contacts-form">
-
-            <div class="modal-contacts-info">
+                <!-- ім'я користувача -->
+                <div class="backgrop-mobile-contact">
+                <div class="modal-contacts-info">
                 <label class="modal-rewiew-label"  for="user-name" >
                 Name
                 </label>
@@ -435,8 +444,8 @@
                 </svg>
                 </div>
             </div>
-
-            <div class="modal-contacts-info">
+            <!-- телефон -->
+            <div class="modal-contacts-info"> 
                 <label class="modal-rewiew-label" for="user-phone">
                 Phone
                 </label>
@@ -453,8 +462,7 @@
                 </svg>
                 </div>
             </div>
-                                
-                
+             <!-- е-мейл -->
             <div class="modal-contacts-info">
                 <label class="modal-rewiew-label" for="user-email">
                 Email
@@ -470,7 +478,7 @@
                 </svg>
                 </div>
             </div>
-                                
+            <!-- коментар -->
             <div class="modal-contacts-info-comment">
                 <label class="modal-rewiew-label" for="user-comment">
                 Comment
@@ -480,7 +488,8 @@
                         id="user-comment" 
                         placeholder="Text input"></textarea>
             </div>
-                        
+            </div>
+            <!-- соглашалка з політикою конфіденціальності -->
             <div class="modal-rewiew-wraper modal-checkbox">
                 <input class="modal-rewiew-checkbox visually-hidden" 
                         type="checkbox" 
@@ -497,13 +506,75 @@
                     I accept the terms and conditions of the <a class="privacy-policy-link" href="#">Privacy Policy</a>
                 </label>
             </div>
-
+            <!-- кнопка - все відправити -->
             <button class="modal-submit" type="submit">Send</button>
-        
         </form>
     </div> 
     </div>
 
+
+    <!-- Меню яке випадає з бургеру в мобільній версії, 
+         якщо не поставити is-open - видно його не буде-->
+    <div class="mobile-menu" hidden>
+
+        <div class="mobil-nav-form">
+           <!-- кнопка закривашка -->
+            <button class="modal-close-x-btn" type="button">
+                <svg class="modal-close-x-svg" width="8" height="8" aria-label="modal close button">
+                    <use href="./images/icons.svg#icon-close-x"></use>
+                </svg>
+            </button>
+            <!-- навігація-перехід між сторінками -->
+            <nav class="nav-panel-mobile">
+                <ul class="nav-menu-mobile">
+                    <li><a class="header-link activ-page" href="./index.html">Studio</a></li>
+                    <li><a class="header-link" href="">Portfolio</a></li>
+                    <li><a class="header-link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <!-- контактна інформація - телефон і мило -->
+            <address class="address-link-mobile">
+                <ul class="address-menu-mobile">
+                    <li><a class="address-link-mobile activ-page" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="address-link-mobile" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+            <!-- посилання на соцмережі -->
+            <div class="mobile-social-list">
+            <ul class="mobile-social-links-ul">
+                <li class="mobile-social-links-li">
+                    <a class="social-link" href="#">
+                        <svg class="icon-mobile-social-links" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-social-links-li">
+                    <a class="social-link" href="#">
+                        <svg class="icon-mobile-social-links" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-social-links-li">
+                    <a class="social-link" href="#">
+                        <svg class="icon-mobile-social-links" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="mobile-social-links-li">
+                    <a class="social-link" href="#">
+                        <svg class="icon-mobile-social-links" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Меню яке випадає з бургеру в мобільній версії закінчилось-->
 </body>
 
 </html>
