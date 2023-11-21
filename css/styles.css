@@ -49,7 +49,13 @@ ul {
     list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -95,196 +101,104 @@ h3 {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/*==== Описаловка Хедеру =====*/
- .header-block {
-     flex-shrink: 0;
-     border-bottom: 1px solid #e7e9fc;
-     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
- }
 
- .header-logo {
-     display: inline-flex;
-     color: var(--primarybrand-color-iris, #4D5AE5);
-     font-family: Raleway, sans-serif;
-     font-size: 18px;
-     font-weight: 700;
-     line-height: 1.17;
-     align-items: baseline;
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
+.is-open {
+    visibility: visible;
 }
 
- .header-span {
-     color: var(--dark-color-navy, #2E2F42);
-     font-family: Raleway, sans-serif;
-     font-size: 18px;
-     font-weight: 700;
-     line-height: 1.17;
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
- }
+/*==== Описаловка Хедеру =====*/
+.header-block {
+    flex-shrink: 0;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 
-  .header-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* описаловка меню-бургера і спливаючого вікна-навігації */
- .mobile-burger-btn {
-    border: none;
-    background-color: transparent;
-    padding: 0;
- }
-
- .mobile-burger-btn-icon{
-    fill: var(--dark-color-navy, #2E2F42);
- }
-
- .mobile-menu{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999999999;
-    background-color: var(--whitebackground-color-wtite, #FFFFFF);
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
- }
-
- .mobile-menu.is-open {
-     opacity: 1;
-     pointer-events: auto;
-     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-
- .mobil-nav-form {
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate(-50%, -50%);
-     width: 100%;
-     min-height: 100%;
-     background-color: var(--whitebackground-color-wtite, #FFFFFF);
-     padding: 24px 24px 40px 16px;
-     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
-         0px 1px 3px rgba(0, 0, 0, 0.12),
-         0px 2px 1px rgba(0, 0, 0, 0.2);
-     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-        /*------кнопка закривашка модального і вікна навігації в мобілці ------*/
-    .modal-close-x-btn {
-        position: absolute;
-        display: flex;
-        width: 24px;
-        height: 24px;
-        top: 24px;
-        right: 24px;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--accent-color-cornflower, #E7E9FC);
-        border-radius: 50%;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        fill: var(--modaloverlay-color-navybluemodal, #2E2F42);
-        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-        }
-    
-    .modal-close-x-btn:hover,
-    .modal-close-x-btn:focus {
-        background-color: var(--pressedstate-color-ocean, #404BBF);
-        border: none;
-        fill: var(--whitebackground-color-wtite, #FFFFFF);
-        }
-    
-        /*-----сам хрестик у закривашці----*/
-    .modal-close-x-svg {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
- .nav-panel-mobile {
-    color: var(--pressedstate-color-ocean, #404BBF);
-    font-size: 36px;
+.header-logo {
+    display: inline-flex;
+    color: var(--primarybrand-color-iris, #4D5AE5);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
     font-weight: 700;
-    line-height: 1.1;
-    text-transform: capitalize;
-    margin-top: 48px;
-    margin-bottom: 168px;
- }
+    line-height: 1.17;
+    align-items: baseline;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 
- .nav-menu-mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: flex-start;
- }
+.header-span {
+    color: var(--dark-color-navy, #2E2F42);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
 
- .address-link-mobile {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
- }
-
- .address-menu-mobile{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 24px;
- }
-
- .activ-page {
+.activ-page {
     color: var(--pressedstate-color-ocean, #404BBF);
- }
+    position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- .mobile-social-list {
-    margin-top: 48px;
- }
+.social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primarybrand-color-iris, #4D5AE5);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- .mobile-social-links-ul {
-     display: flex;
-     width: 40px;
-     height: 40px;
-     gap: 40px;
-     justify-content: flex-start;
-     align-items: center;
- }
+.social-link:hover,
+.social-link:focus {
+    background-color: var(--pressedstate-color-ocean, #404BBF);
+}
 
- .mobile-social-links-li {
-     width: 40px;
-     height: 40px;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+/*------кнопка закривашка модального і вікна навігації в мобілці ------*/
+.modal-close-x-btn {
+    position: absolute;
+    display: flex;
+    width: 24px;
+    height: 24px;
+    top: 24px;
+    right: 24px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color-cornflower, #E7E9FC);
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    fill: var(--modaloverlay-color-navybluemodal, #2E2F42);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
- .social-link {
-     display: flex;
-     width: 40px;
-     height: 40px;
-     justify-content: center;
-     align-items: center;
-     background-color: var(--primarybrand-color-iris, #4D5AE5);
-     border-radius: 50%;
-     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
+}
 
- .social-link:hover,
- .social-link:focus {
-     background-color: var(--pressedstate-color-ocean, #404BBF);
- }
+.modal-close-x-btn:hover,
+.modal-close-x-btn:focus {
+    background-color: var(--pressedstate-color-ocean, #404BBF);
+    border: none;
+    fill: var(--whitebackground-color-wtite, #FFFFFF);
+}
 
- .icon-mobile-social-links {
-     fill: var(--light-color-cloud, #F4F4FD);
- }
+/*-----сам хрестик у закривашці----*/
+.modal-close-x-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
- /*==== Описаловка модaльного вікна =====*/
+/*==== Описаловка модaльного вікна =====*/
 .backdrop {
     position: fixed;
     top: 0;
@@ -303,16 +217,13 @@ h3 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 288px;
-    min-height: 623px;
     border-radius: 4px;
     background-color: var(--modalbackground-color-modal, #FCFCFC);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 72px 16px 24px 16px;
-}
+    }
 
 /*-------заголовок модального вікна-----*/
 .modal-head-text {
@@ -323,11 +234,6 @@ h3 {
 }
 
 /*--------4 поля для вводу ім'я, телефону, мила і комента-------*/
-.backgrop-mobile-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
 
 .modal-contacts-info {
     display: flex;
@@ -377,7 +283,6 @@ h3 {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-rewiew-textarea:hover,
@@ -417,7 +322,6 @@ h3 {
     gap: 8px;
     align-items: baseline;
     margin-bottom: 24px;
-    
 }
 
 .modal-rewiew-checkbox {
@@ -479,51 +383,248 @@ h3 {
     color: var(--primarybrand-color-iris, #4D5AE5);
 }
 
+.nav-menu {
+    gap: 40px;
+    position: relative;
+}
 
-
-
-
-
- .nav-menu {
-     gap: 40px;
-     position: relative;
- }
-
- .address-link {
+.address-link {
     color: var(--text-color-slate, #434455);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- }
-/* ====== мобільний хедер ====== */
+}
+
+/* =======  Головна секція  =======  */
+
+.main-title {
+    background-color: var(--herobackground-color-gray, rgba(46, 47, 66, 0.70));
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-sizing: border-box;
+    background-clip: padding-box;
+    margin: 0 auto;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-title {
+    color: var(--whitebackground-color-wtite, #FFF);
+    font-weight: 700;
+    text-align: center;
+}
+
+.main-button {
+    background-color: var(--primarybrand-color-iris, #4D5AE5);
+    color: var(--whitebackground-color-wtite, #FFFFFF);
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 /* =======  Правила для мобілки  =======  */
+/*@media screen and (max-width: 320px) {
+    .main-title {
+    background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+    url(../images/sad-cat.jpg);
+            background-repeat: no-repeat;
+            max-width: 320px;
+            background-position: center center;
+            background-size: cover;
+            padding: 0;
+            box-sizing: border-box;
+            background-clip: padding-box;
+            margin: 0 auto;
+    }
+}*/
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767px) {
     .container {
         width: 320px;
         margin-left: auto;
         margin-right: auto;
     }
 
-   .header-logo {
+    .header-logo {
         padding-top: 17.5px;
         padding-bottom: 17.5px;
     }
 
-    .is-open {
-            visibility: visible;
-    }
+/* описаловка меню-бургера і спливаючого вікна-навігації */
+    .mobile-burger-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+    .mobile-burger-btn-icon {
+    fill: var(--dark-color-navy, #2E2F42);
+}
+ 
+.modal-form {
+        width: 288px;
+        min-height: 623px;
+        padding: 72px 16px 24px 16px;
+}
+
+.mobile-menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 999999999999;
+            background-color: var(--whitebackground-color-wtite, #FFFFFF);
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    
+.nav-panel-mobile {
+    color: var(--pressedstate-color-ocean, #404BBF);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-transform: capitalize;
+    margin-top: 48px;
+    margin-bottom: 168px;
+}
+
+.nav-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: flex-start;
+}
+
+.address-link-mobile {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.address-menu-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.mobile-social-list {
+    margin-top: 48px;
+}
+
+.mobile-social-links-ul {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    gap: 40px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mobile-social-links-li {
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-mobile-social-links {
+    fill: var(--light-color-cloud, #F4F4FD);
+}
+
+.backgrop-mobile-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.is-open {
+        visibility: visible;
+        }
 
     .mobile-menu.is-open,
     .backdrop.is-open {
         opacity: 1;
         pointer-events: auto;
-        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-                visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .mobile-nav-form {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            min-height: 100%;
+            background-color: var(--whitebackground-color-wtite, #FFFFFF);
+            padding: 24px 24px 40px 16px;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+            transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .mobile-nav-form-x {
+        position: relative;
+        width: 100%;
+        min-height: 100%;
     }
 
     .nav-menu,
     .address-link {
         display: none;
+    }
+
+    /* пішла 1 секція hero */
+    .main-title {
+        background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-bg/hero-bg-mobile.jpg);
+        max-width: 767px;
+        padding: 72px 0;
+    }
+    
+    .main-section {
+        height: 288px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.11;
+        max-width: 170px;
+        height: 160px;
+    }
+
+    .main-button {
+        margin-top: 72px;
+    }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+screen and (min-resolution: 2dppx) and (max-width: 767px),
+screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)),
+                url(../images/hero-bg/hero-bg-mobile@2x.jpg);
     }
 }
 
@@ -532,30 +633,137 @@ h3 {
 @media screen and (min-width: 768px) {
     .container {
         width: 768px;
+        margin-left: auto;
+        margin-right: auto;
     }
+
     .header-logo {
         padding-top: 25.5px;
         padding-bottom: 25.5px;
         margin-right: 120px;
     }
+    .nav-panel {
+        display: flex;
+        align-items: center;
+    }
 
     .nav-menu {
         display: flex;
+        font-weight: 500;
     }
-    
+
     .mobile-burger-btn {
         display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    .address-menu {
+        font-weight: 500;
     }
     
     .address-link {
         display: flex;
     }
+    
+    .is-open {
+    visibility: visible;
+    }
 
-    .mobile-menu.is-open,
-    .backdrop-mobile.is-open {
-    display: none;
+    .backdrop.backdrop-laptop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+   .modal-form {
+            width: 408px;
+            min-height: 584px;
+            padding: 72px 24px 24px 24px;
+        }
+    
+    .modal-contacts-info {
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .mobile-menu.is-open {
+        display: none;
+    }
+
+    .header-link:focus,
+    .header-link:hover,
+    .address-link:hover,
+    .address-link:focus {
+        color: var(--pressedstate-color-ocean, #404BBF);
+    }
+    
+    .main-button:hover,
+    .main-button:focus,
+    .button-subscribe:hover,
+    .button-subscribe:focus,
+    .modal-submit:hover,
+    .modal-submit:focus {
+        background-color: var(--pressedstate-color-ocean, #404BBF);
+    }
+    
+    .activ-page:hover::after {
+        text-decoration: underline;
+    }
+    
+    .activ-page::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 4px;
+        left: 0;
+        bottom: -24px;
+        background-color: #404BBF;
+        border-radius: 2px;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     /* пішла 1 секція hero */
+    .main-title {
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg/hero-bg-laptop.jpg);
+            min-width: 768px;
+            padding: 112px 0;
+        }
+
+    .main-section {
+        height: 212px;
+    }
+
+    .hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        height: 120px;
+    }
+
+    .main-button {
+        margin-top: 36px;
     }
 }
+    
+@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+        .hero {
+            background-image: linear-gradient(to bottom,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+                url(../images/hero-bg/hero-bg-laptop@2x.jpg);
+            }
+        }
 
 /* =======  Правила для десктопів  =======  */
 
@@ -563,12 +771,53 @@ h3 {
     .container {
         width: 1158px;
     }
-    
+
     .header-logo {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 25.5px;
+        padding-bottom: 25.5px;
         margin-right: 76px;
     }
-}
+    .address-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
 
+    /* пішла 1 секція hero */
+    .main-title {
+        background-image: linear-gradient(to bottom,
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg/hero-bg-desktop.jpg);
+        max-width: 1440px;
+        padding: 188px 0;
+        }
 
+    .main-section {
+        height: 224px;
+    }
+    
+    .main-button {
+        margin-top: 48px;
+    }
+
+    .is-open {
+        visibility: visible;
+    }
+
+    .modal-rewiew-input {
+        padding-left: 38px;
+    }
+
+    }
+    
+    @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
+        screen and (min-resolution: 2dppx) and (min-width: 1158px),
+        screen and (min-device-pixel-ratio: 2) and (min-width: 1158px) {
+            .hero {
+                background-image: linear-gradient(to bottom,
+                        rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero-bg/hero-bg-desktop@2x.jpg);
+            }
+        }
