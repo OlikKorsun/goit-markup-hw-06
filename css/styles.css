@@ -60,7 +60,6 @@ p {
     margin-bottom: 0;
 }
 
-/*
 h2 {
     color: var(--modaloverlay-color-navybluemodal, #2E2F42);
     text-align: center;
@@ -80,7 +79,6 @@ h3 {
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 }
-*/
 
 /*==== Основний контейнер =====*/
 .container {
@@ -434,7 +432,21 @@ h3 {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* =======  Правила для мобілки  =======  */
+/* =======  Секція 2 - Досягнення  =======  */
+
+.defenders-section {
+    padding: 96px 0;
+}
+
+.defenders-section-ul {
+    display: flex;
+ }
+
+.defenders-section-li {
+    display: flex;
+    flex-direction: column;
+}
+
 /*@media screen and (max-width: 320px) {
     .main-title {
     background-image: linear-gradient(to bottom,
@@ -451,6 +463,8 @@ h3 {
             margin: 0 auto;
     }
 }*/
+
+/* =======  Правила для мобілки  =======  */
 
 @media screen and (max-width: 767px) {
     .container {
@@ -615,6 +629,36 @@ h3 {
     .main-button {
         margin-top: 72px;
     }
+
+    /* пішла 2 секція */
+    .icon-defenders-div {
+        display: none;
+        }
+    
+    .defenders-section-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 72px; 
+    max-width: 100%;
+    }
+
+    .section-h-three {
+        color: var(--modaloverlay-color-navybluemodal, #2E2F42);
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        text-transform: capitalize;
+    }
+
+    .defenders-section-p {
+        color: var(--text-color-slate, #434455);
+        font-weight: 500;
+    }
+
+    .defenders-section-li {
+        gap: 8px;
+    }
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -752,6 +796,37 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .main-button {
         margin-top: 36px;
     }
+
+    /* пішла 2 секція */
+    .icon-defenders-div {
+        display: none;
+        }
+    
+    .defenders-section-ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 24px;
+        row-gap: 72px;
+    }
+
+    .defenders-section-li {
+        width: calc((100% - 24px) / 2);
+        gap: 8px;
+    }
+
+    .section-h-three {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.11;
+        text-transform: capitalize;
+    }
+
+    .defenders-section-p {
+        font-weight: 500;
+        font-size: 15.8px;
+    }
 }
     
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -808,6 +883,42 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
     .modal-rewiew-input {
         padding-left: 38px;
     }
+
+    /* пішла секція 2 */
+    .defenders-section {
+        padding: 120px 0;
+    }
+    
+    .defenders-container {
+        align-items: center;
+    }
+
+    .defenders-section-ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 24px;
+    }
+    
+    .defenders-section-li {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: calc((100% - 72px) / 4);
+    }
+
+    .icon-defenders-div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 112px;
+            width: 264px;
+            background-color: var(--light-color-cloud, #F4F4FD);
+            border-radius: 4px;
+            margin-bottom: 8px;
+            border: 1px solid var(--subtitletext-color-ligntslate, #8E8F99);
+            padding: 24px 100px;
+        }
 
     }
     
