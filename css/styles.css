@@ -542,6 +542,148 @@ p {
     letter-spacing: 0.4px;
 }
 
+/* ======= Футер - урааааааа ============ */
+
+.footer-block {
+    background-color: var(--dark-color-navy, #2E2F42);
+    flex-shrink: 0;
+}
+
+.footer-logo {
+    display: inline-block;
+    color: var(--primarybrand-color-iris, #4D5AE5);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.footer-span {
+    color: var(--light-color-cloud, #F4F4FD);
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-block-p {
+    color: var(--light-color-cloud, #F4F4FD);
+}
+
+.footer-social-link-p {
+    display: block;
+    color: var(--whitebackground-color-wtite, #FFF);
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.footer-social-links-ul {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    gap: 16px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-social-links-li {
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primarybrand-color-iris, #4D5AE5);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: var(--success-color-green, #31D0AA);
+}
+
+.form-subscribe-p {
+    color: var(--whitebackground-color-wtite, #FFF);
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.form-input-subscibe {
+    color: var(--whitebackground-color-wtite, #FFF);
+    font-weight: 500;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.form-subscribe {
+    display: flex;
+    gap: 24px;
+}
+
+.e-mail-subscribe {
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 16px;
+    border: 1px solid var(--whitebackground-color-wtite, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.e-mail-subscribe::placeholder {
+    color: var(--whitebackground-color-wtite, #FFF);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.button-subscribe {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--whitebackground-color-wtite, #FFF);
+    text-align: center;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    border: none;
+    background: var(--primarybrand-color-iris, #4D5AE5);
+}
+
+.footer-form-label {
+    display: flex;
+    gap: 16px;
+}
+
+.button-icon-send {
+    fill: var(--light-color-cloud, #F4F4FD);
+    margin-left: 16px;
+}
 
 /* =======  Правила для мобілки  =======  */
 
@@ -765,6 +907,82 @@ p {
         width: 100%;
     }
 
+    /* пішов футер */
+
+    .footer-block {
+        padding: 96px 0;
+    }
+
+    .mobil-logo {
+        text-align: center;
+    }
+
+    .footer-block-p {
+        max-width: 100%;
+    }
+
+    .mobil-block-logo {
+        margin-bottom: 72px;
+    }
+
+    .footer-social-link-p {
+        text-align: center;
+    }
+
+    .mobil-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 72px;
+    }
+
+    .form-subscribe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .form-input-subscibe {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .button-subscribe {
+        width: 165px;
+    }
+
+    .e-mail-subscribe {
+    width: 288px;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 16px;
+    border: 1px solid var(--whitebackground-color-wtite, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+
+.e-mail-subscribe::placeholder {
+    color: var(--whitebackground-color-wtite, #FFF);
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+}
+
+.button-icon-send {
+    width: 24px;
+    height: 24px;
+}
 }
 
 @media screen and (min-resolution: 192dpi) and (max-width: 767px),
@@ -952,6 +1170,12 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         width: calc((100% - 24px) / 2);
     }
 
+    /* Пішла секція 4 - Потфоліо */
+    
+    .overlay {
+        display: none;
+        }
+    
     .portfolio-section-ul {
         display: flex;
         flex-direction: row;
@@ -966,13 +1190,29 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         width: calc((100% - 24px) / 2);
     }
 
-    /* Пішла секція 4 - Потфоліо */
-    
-    .overlay {
-        display: none;
-        }
-    
+        /* пішов футер */
+
+    .footer-block {
+        padding-top: 96px;
+        padding-bottom: 96px;
+        padding-left: 108px;
     }
+
+    .footer-block-p {
+        width: 264px;
+    }
+
+    .lap-top-footer {
+        display: inline-flex;
+        gap: 24px;
+        margin-bottom: 72px;
+    }
+
+    .e-mail-subscribe {
+        opacity: 0.6;
+    }
+
+   }
     
 @media screen and (min-resolution: 192dpi) and (min-width: 768px),
     screen and (min-resolution: 2dppx) and (min-width: 768px),
@@ -1128,6 +1368,28 @@ screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
         .portfolio-section-li {
             width: calc((100% - 48px) / 3);
         }
+
+    /* пішов футер */
+
+    .footer-block {
+        padding: 100px 0px 100px 0px;
+    }
+    
+    .footer-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-column {
+        margin-right: 120px;
+    }
+
+    .e-mail-subscribe::placeholder {
+        color: var(--whitebackground-color-wtite, #FFF);
+        font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+    }
 }
     
     @media screen and (min-resolution: 192dpi) and (min-width: 1158px),
